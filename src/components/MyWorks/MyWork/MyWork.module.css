@@ -1,0 +1,35 @@
+.skill {
+    width: 250px;
+    background-color: #95ff00;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.projectIcon {
+    width: 100%;
+    min-height: 200px;
+    background-image: url("https://cdn.pixabay.com/photo/2018/01/06/07/53/social-3064515_960_720.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link {
+    border: 1px solid red;
+    color: #ffc536;
+    text-decoration:none;
+    font-style: italic;
+}
+
+
+.projectTitle {
+color: #a600ff;
+}
+
+.description {
+    word-break: break-word;;
+    padding: 5px;
+}
