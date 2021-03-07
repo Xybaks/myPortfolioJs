@@ -1,6 +1,6 @@
 .footerBlock {
     min-height: 15vh;
-    background-color: #7cc7de;
+    background: #243238;
     flex-wrap: wrap;
     display: flex;
     flex-direction: column;
@@ -14,7 +14,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #1e90ff;
 }
 
 

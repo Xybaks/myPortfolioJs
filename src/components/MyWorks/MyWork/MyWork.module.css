@@ -1,15 +1,18 @@
 .skill {
     width: 250px;
-    background-color: #95ff00;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    cursor: pointer;
+    margin-right:5px;
+    margin-left:5px;
+    margin-top: 20px;
 }
 
 .projectIcon {
     width: 100%;
-    min-height: 200px;
+    min-height: 155px;
     background-image: url("https://cdn.pixabay.com/photo/2018/01/06/07/53/social-3064515_960_720.jpg");
     background-size: cover;
     display: flex;
@@ -18,18 +21,40 @@
 }
 
 .link {
-    border: 1px solid red;
-    color: #ffc536;
+    background-color: #2d3f47;
     text-decoration:none;
     font-style: italic;
+    font-size: 25px;
+    font-family: poppins;
+    color: #c70039;
+    opacity: 0.7;
+}
+.link h2{
+    max-height: 35px;
+    margin: 0;
 }
 
 
 .projectTitle {
-color: #a600ff;
+  color: #c70039;
+    cursor: pointer;
+    font-size: 25px;
+    opacity: .8;
+    font-family: poppins;
+    font-weight: 300;
+    margin-top:20px;
+    margin-bottom: 10px;
+
 }
 
 .description {
+    color: whitesmoke;
     word-break: break-word;;
-    padding: 5px;
+    font-size: 20px;
+    opacity: .8;
+    font-family: poppins;
+    font-weight: 200;
+    margin-bottom: 20px;
+    border-radius: 1px;
+    border: #c70039 solid 2px;
 }

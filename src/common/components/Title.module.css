@@ -1,0 +1,24 @@
+
+.title {
+    margin-top:20px;
+    margin-bottom: 40px;
+    font-size: 35px;
+    font-family: poppins;
+    color: #c70039;
+    display: flex;
+    letter-spacing: 3px;
+    font-weight: 600;
+    position: relative;
+}
+
+.title::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 2px;
+    bottom: -25px;
+    background: #c70039;;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    margin-bottom: 20px;
+}
