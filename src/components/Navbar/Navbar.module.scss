@@ -1,0 +1,17 @@
+@import "./src/common/styles/sass/variables";
+@import "./src/common/styles/sass/myMixins";
+.navbar{
+ display: flex;
+ justify-content:space-around;
+ min-width: 100%;
+ background-color: $secondColor;
+ border: 1px solid $mainColor;
+ border-radius: 1px;
+ a{
+  text-decoration:none;
+  @include text($mainColor,poppins,35px,normal,600,2px);
+  @media screen and (max-width: 750px ){
+   @include text($mainColor,poppins,15px,normal,300,1px);
+  }
+ }
+}

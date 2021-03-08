@@ -1,11 +1,10 @@
 import React from "react";
-import style from "./Work.module.css"
-import styleContainer from "../../common/styles/Container.module.css"
+import style from "./Work.module.scss"
 import MyWork from "./MyWork/MyWork";
 import Title from "../../common/components/Title";
-import socialNetImg from "../../assefds/images/socialNetwork.jpg";
-import counterImg from "../../assefds/images/counterImage.jpg";
-import todolistImg from "../../assefds/images/todolist.png";
+import socialNetImg from "../../assets/images/socialNetwork.jpg";
+import counterImg from "../../assets/images/counterImage.jpg";
+import todolistImg from "../../assets/images/todolist.png";
 
 
 const Work = () => {
@@ -40,15 +39,14 @@ const Work = () => {
 
 
     return (
-        <div className={style.skillsBlock}>
-            <div className={`${styleContainer.container} ${style.skillsContainer}`}>
+        <div className={style.workBlock}>
+            <div className={style.workContainer}>
                 <Title title="Projects"> </Title>
-                <div className={style.skills}>
+                <div className={style.works}>
                     {myWorksArr.map((w)=> <MyWork
                         stile={w.styleI}
                         title={w.title}
                         description={w.description}
-                        disc
                     />)}
 
                 </div>

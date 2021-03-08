@@ -1,12 +1,11 @@
 import React from "react";
-import style from "./Skills.module.css"
-import styleContainer from "../../common/styles/Container.module.css"
+import style from "./Skills.module.scss"
 import MySkill from "./MySkill/MySkill";
 import Title from "../../common/components/Title";
-import jsTsIm from "../../assefds/images/tsjsImg.jpg";
-import reactIm from "../../assefds/images/ReactIcon.png";
-import htmlcssIm from "../../assefds/images/htmlcssImg.png";
-import reduxIm from "../../assefds/images/reduxImg.png";
+import jsTsIm from "../../assets/images/tsjsImg.jpg";
+import reactIm from "../../assets/images/ReactIcon.png";
+import htmlcssIm from "../../assets/images/htmlcssImg.png";
+import reduxIm from "../../assets/images/reduxImg.png";
 
 
 const Skills = () => {
@@ -25,7 +24,7 @@ const Skills = () => {
 
     const mySkillsArr = [
         {
-            title: "JavaScript/TypeScript",
+            title: "TypeScript/JavaScript",
             styleI: jsTsImage,
             skills: ["Functional components","Class components", "HOC", "Promises", "Hooks","REST API", "Storybook", "libraries..."]
         },
@@ -49,7 +48,7 @@ const Skills = () => {
 
     return (
         <div className={style.skillsBlock}>
-            <div className={`${styleContainer.container} ${style.skillsContainer}`}>
+            <div className={style.skillsContainer}>
                 <Title title="My skills"> </Title>
                 <div className={style.skills}>
                     {mySkillsArr.map((sk) => (<MySkill

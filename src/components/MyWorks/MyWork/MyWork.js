@@ -1,10 +1,10 @@
 import React from "react";
-import style from "./MyWork.module.css";
+import style from "./MyWork.module.scss";
 
 const MyWork = (props) => {
 
     return (
-        <div className={style.skill}>
+        <div className={style.work}>
             <div className={style.projectIcon} style={props.stile}>
                 <a className={style.link} href=""><h2>click</h2></a>
             </div>

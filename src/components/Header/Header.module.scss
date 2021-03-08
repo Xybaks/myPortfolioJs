@@ -1,0 +1,15 @@
+@import "./src/common/styles/sass/variables";
+
+.header{
+    display: flex;
+    //justify-content:flex-end;
+    align-items: center;
+    height: 70px;
+    position: fixed;
+    min-width: 100%;
+    z-index: 10;
+    background: $backgroundColor2;
+    @media screen and (max-width:1030px){
+            height: 60px;
+    }
+}

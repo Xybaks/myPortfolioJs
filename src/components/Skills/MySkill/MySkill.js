@@ -1,9 +1,8 @@
 import React from "react";
-import style from "./MySkill.module.css"
+import style from "./MySkill.module.scss"
 
 
 const MySkill = (props) => {
-    debugger
     return (
         <div className={style.skill}>
             <div className={style.icon} style={props.style}> </div>

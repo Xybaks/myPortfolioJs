@@ -1,0 +1,39 @@
+@import "./src/common/styles/sass/variables";
+
+.footerBlock {
+  min-height: 15vh;
+  background: $backgroundColor2;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@import "./src/common/styles/sass/variables";
+
+.imageContainer {
+  display: flex;
+  min-width: 280px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  .link {
+    cursor: pointer;
+    margin: 3px;
+    font-size: medium;
+    width: 64px;
+    height: 64px;
+    background-size: cover;
+    background-color: $secondColor;
+     }
+}
+

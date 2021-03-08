@@ -1,6 +1,6 @@
 import React from "react";
-import style from "./Main.module.css"
-import myImage from "../../assefds/images/myPhoto.jpg"
+import style from "./Main.module.scss"
+import myImage from "../../assets/images/myPhoto.jpg"
 const Main = () => {
     return (
         <div className={style.mainBlock}>
@@ -11,7 +11,7 @@ const Main = () => {
                         </h1>
                     <p>Frontend Developer</p>
                 </div>
-                <div ><img src={myImage} className={style.mainPhoto} alt={"image"}/> </div>
+                <div ><img src={myImage} className={style.mainPhoto} alt={"myPhoto"}/> </div>
 
         </div>
     )

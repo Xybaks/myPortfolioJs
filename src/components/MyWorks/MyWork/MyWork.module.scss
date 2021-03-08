@@ -1,0 +1,72 @@
+@import "./src/common/styles/sass/variables";
+
+.work {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-top: 20px;
+
+  .projectIcon {
+    width: 100%;
+    min-height: 155px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .link {
+      text-decoration: none;
+      font-style: italic;
+      font-size: 25px;
+      font-family: poppins, serif;
+      color: $mainColor;
+      position: relative;
+      z-index: 1;
+
+      h2 {
+        max-height: 35px;
+        margin: 0;
+      }
+    }
+  }
+
+  .projectIcon::before {
+    position: absolute;
+    content: "";
+    background-color: black;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.3;
+  }
+
+  .projectTitle {
+    color: $mainColor;
+    cursor: pointer;
+    font-size: 25px;
+    font-family: poppins, serif;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+  }
+
+  .description {
+    color: $secondColor;
+    word-break: break-word;;
+    font-size: 20px;
+    opacity: .9;
+    font-family: poppins, serif;
+    margin-bottom: 20px;
+    font-weight: 200;
+    letter-spacing:2px;
+  }
+}
+

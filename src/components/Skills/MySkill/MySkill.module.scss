@@ -1,0 +1,50 @@
+@import "./src/common/styles/sass/variables.scss";
+
+.skill {
+  width: 250px;
+  background: $backgroundColor2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-top: 20px;
+
+  .icon {
+    margin-top: 5px;
+    width: 100px;
+    height: 70px;
+    background-size: cover;
+  }
+
+  .title {
+    color: $mainColor;
+    font-size: 25px;
+    opacity: .9;
+    font-family: poppins,serif ;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .description {
+    font-weight: 200;
+    padding: 10px;
+    margin-bottom: 10px;
+
+    li {
+      text-align: left;
+      color: $secondColor;
+      font-family: poppins,serif ;
+      font-size: 20px;
+      word-break: break-word;
+      padding-top: 5px;
+    }
+  }
+}
+
+
+
+
+
