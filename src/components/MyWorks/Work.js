@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./Work.module.scss"
 import MyWork from "./MyWork/MyWork";
-import Title from "../../common/components/Title";
+import Title from "../../common/components/title/Title";
 import socialNetImg from "../../assets/images/socialNetwork.jpg";
 import counterImg from "../../assets/images/counterImage.jpg";
 import todolistImg from "../../assets/images/todolist.png";
@@ -23,7 +23,7 @@ const Work = () => {
         {
             title: "SocialNetwork",
             styleI: socialImage,
-            description: ["SPA with Typescript, redux, API requests  with \"axios\" library... in process"]
+            description: ["SPA with Typescript, redux,thunk,REST API ... in progress"]
         },
         {
             title: "Counter with Redux",
@@ -33,7 +33,7 @@ const Work = () => {
         {
             title: "Powerful Todolist",
             styleI: todolistImage,
-            description: ["SPA with Typescript, redux, API requests  with \"axios\" library,tests... in process"]
+            description: ["SPA with Typescript, redux, API requests  with \"axios\" library,tests... in progress"]
         }
     ]
 

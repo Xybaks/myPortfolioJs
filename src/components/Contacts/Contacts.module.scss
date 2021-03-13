@@ -35,22 +35,5 @@
         }
       }
     }
-
-    h3 {
-      cursor: pointer;
-      text-decoration: none;
-      font-style: italic;
-      font-size: 25px;
-      font-family: poppins,serif;
-      color: $mainColor;
-      position: relative;
-      z-index: 1;
-      max-height: 35px;
-      margin: 10px 10px 20px;
-      padding: 4px 10px 4px;
-      background-color: $secondColor;
-    }
-
-
   }
 }

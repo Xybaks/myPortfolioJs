@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./Skills.module.scss"
 import MySkill from "./MySkill/MySkill";
-import Title from "../../common/components/Title";
+import Title from "../../common/components/title/Title";
 import jsTsIm from "../../assets/images/tsjsImg.jpg";
 import reactIm from "../../assets/images/ReactIcon.png";
 import htmlcssIm from "../../assets/images/htmlcssImg.png";
@@ -31,13 +31,13 @@ const Skills = () => {
         {
             title: "React",
             styleI: reactImage,
-            skills: ["Functional components","Class components", "Hooks", "Redux", "HOC", "Promises",
+            skills: ["Functional components","Class components", "Hooks", "Redux", "HOC", "thunk",
                 "REST API", "Tests", "libraries..."]
         },
         {
             title: "Redux",
             styleI: reduxImage,
-            skills: ["Hooks", "Redux in TypeScript", "Connect", "Redux+LocaleStorage"]
+            skills: [ "Redux in TypeScript", "Connect","redux-form", "Redux+LocaleStorage"]
         },
         {
             title: "HTML/CSS",

@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./Footer.module.scss"
-import Title from "../../common/components/Title";
+import Title from "../../common/components/title/Title";
 import emailImg from "../../assets/images/email.png"
 import lindedinImg from "../../assets/images/linkedin.png"
 import githubImg from "../../assets/images/gitHub.png"
