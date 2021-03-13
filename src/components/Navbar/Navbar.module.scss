@@ -7,8 +7,11 @@
  background-color: $secondColor;
  border: 1px solid $mainColor;
  border-radius: 1px;
- a{
+ .link{
+  display: flex;
+  z-index: 2;
   text-decoration:none;
+  cursor: pointer;
   @include text($mainColor,poppins,35px,normal,600,2px);
   @media screen and (max-width: 750px ){
    @include text($mainColor,poppins,15px,normal,300,1px);

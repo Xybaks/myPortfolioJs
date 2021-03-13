@@ -1,72 +1,130 @@
 @import "./src/common/styles/sass/variables";
 @import "./src/common/styles/sass/myMixins";
 
-
 .mainBlock {
-    min-height: 100vh;
-    background: $backgroundColor2;
-    align-content: center;
+  min-height: 100vh;
+  background: $backgroundColor2;
+  align-content: center;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+
+  .backgroundAnimation {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .container {
     width: 80%;
-    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
+    position: relative;
+
     .mainText {
-        margin-top: 60px;
+      margin-top: 60px;
+      margin-bottom: 40px;
+      min-width: 290px;
+      color: $mainColor;
+      font-size: 42px;
+      line-height: 48px;
+      padding: 5px;
+
+      h1 {
+        font-weight: 700;
+        font-size: 52px;
+        line-height: 56px;
+        margin: 2px;
+        font-family: inherit;
+
+      }
+
+      span {
+        font-weight: inherit;
+        font-style: inherit;
+        font-family: inherit;
+        color: $secondColor;
+        font-size: 42px;
+        line-height: 58px;
+      }
+
+      .im {
+        position: relative;
+        z-index: +2;
+        color: $secondColor;
+      }
+
+      @media screen and (max-width: 600px) {
         min-width: 290px;
         color: $mainColor;
-        font-size: 42px;
-        line-height: 48px;
-        padding: 5px;
+        font-size: 22px;
+        line-height: 22px;
+        padding: 1px;
         h1 {
-            font-weight: 700;
-            font-size: 52px;
-            line-height: 56px;
-            margin: 2px;
-            font-family: inherit;
-
+          font-size: 25px;
+          line-height: 28px;
         }
         span {
-            font-weight: inherit;
-            font-style: inherit;
-            font-family: inherit;
-            color: $secondColor;
-            font-size: 42px;
-            line-height: 58px;
+          font-size: 22px;
+          line-height: 28px;
         }
-        .im {
-            color: $secondColor;
-        }
-        @media screen and (max-width: 600px) {
-            min-width: 290px;
-            color: $mainColor;
-            font-size: 22px;
-            line-height: 22px;
-            padding: 1px;
-            h1 {
-                font-size: 25px;
-                line-height: 28px;
-            }
-            span {
-                font-size: 22px;
-                line-height: 28px;
-            }
 
-        }
+      }
     }
-    .mainPhoto {
+
+    .mainPhotoCont {
+      position: relative;
+      margin-bottom: 20px;
+      z-index: 5;
+      .mainPhoto {
         max-width: 600px;
         max-height: 800px;
         border-radius: 20px;
         border: $mainColor solid 5px;
-        @media screen and (max-width: 670px){
-                max-width: 250px;
-                max-height: 300px;
-                object-fit: cover
+        position: relative;
+        //z-index: 2;
+        @media screen and (min-width: 671px) and (max-width: 900px) {
+          max-width: 500px;
+          max-height: 600px;
+          object-fit: cover
         }
+        @media screen and (max-width: 670px) {
+          max-width: 250px;
+          max-height: 300px;
+          object-fit: cover
+        }
+      }
 
+      &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 30px;
+        top: -30px;
+        border-radius: 20px;
+        border: $mainColor solid 5px;
+        z-index: -1;
+        @media screen and (min-width: 671px) and (max-width: 900px) {
+          left: 20px;
+          top: -20px;
+        }
+        @media screen and (max-width: 670px) {
+          left: 15px;
+          top: -15px;
+        }
+      }
     }
+
+  }
+
 
 }
 

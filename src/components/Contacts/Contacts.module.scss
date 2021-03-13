@@ -29,6 +29,12 @@
         align-self: center;
         text-align: center;
         background-color: $secondColor;
+        border: 2px solid $mainColor;
+        &:focus {
+          color:$secondColor;
+          background-color: $backgroundColor2;
+          border: 2px solid $secondColor;
+        }
         @media screen and (min-width: 620px) {
           width: 50%;
           font-size: large;

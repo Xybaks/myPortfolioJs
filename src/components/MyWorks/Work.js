@@ -5,6 +5,7 @@ import Title from "../../common/components/title/Title";
 import socialNetImg from "../../assets/images/socialNetwork.jpg";
 import counterImg from "../../assets/images/counterImage.jpg";
 import todolistImg from "../../assets/images/todolist.png";
+import Fade from "react-reveal/Fade";
 
 
 const Work = () => {
@@ -39,19 +40,21 @@ const Work = () => {
 
 
     return (
-        <div className={style.workBlock}>
-            <div className={style.workContainer}>
-                <Title title="Projects"> </Title>
-                <div className={style.works}>
-                    {myWorksArr.map((w)=> <MyWork
-                        stile={w.styleI}
-                        title={w.title}
-                        description={w.description}
-                    />)}
+        <Fade bottom>
+            <div id="works" className={style.workBlock}>
+                <div className={style.workContainer}>
+                    <Title title="Projects"> </Title>
+                    <div className={style.works}>
+                        {myWorksArr.map((w) => <MyWork
+                            stile={w.styleI}
+                            title={w.title}
+                            description={w.description}
+                        />)}
 
+                    </div>
                 </div>
             </div>
-        </div>
+        </Fade>
     )
 }
 export default Work
