@@ -9,35 +9,36 @@ const myNavbarArr = [
     {
         title: "email",
         imgLogo: emailImg,
-        action() {
-        }
+        link: "mailto:nikolai.berestevich@gmail.com"
     },
     {
         title: "lindedin",
         imgLogo: lindedinImg,
-        action() {
-        }
+        link: "https://www.linkedin.com/in/nikolai-berestevich-87749a1a3/"
     },
     {
         title: "github",
         imgLogo: githubImg,
-        action() {
-        }
+        link: "https://github.com/Xybaks"
     },
 ]
 
 
 const Footer = () => {
-       return (
+    return (
         <div className={style.footerBlock}>
             <div className={style.footer}>
                 <Title id={"contacts"} title={"Nikolai Berestevich"}> </Title>
                 <div className={style.imageContainer}>
-                    {myNavbarArr.map((el) =>
-                        <h3 className={style.link} style={
-                            {backgroundImage: `url(${el.imgLogo})`}
-                        }>
-                        </h3>
+                    {myNavbarArr.map((el,index) =>
+                        <a className={style.link}
+                           key={index}
+                           style={{backgroundImage: `url(${el.imgLogo})`}}
+                           href={el.link}
+                           target="_blank"
+                           rel="noreferrer"
+                        >
+                        </a>
                     )}
                 </div>
                 <h5 className={style.copyright}>

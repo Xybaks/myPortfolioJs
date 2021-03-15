@@ -27,18 +27,18 @@ const Skills = () => {
         {
             title: "TypeScript/JavaScript",
             styleI: jsTsImage,
-            skills: ["Functional components", "Class components", "HOC", "Promises", "Hooks", "REST API", "Storybook", "libraries..."]
+            skills: ["Functional components", "Class components", "HOC", "Promises", "Hooks", "REST API", "Storybook", "Libraries..."]
         },
         {
             title: "React",
             styleI: reactImage,
-            skills: ["Functional components", "Class components", "Hooks", "Redux", "HOC", "thunk",
-                "REST API", "Tests", "libraries..."]
+            skills: ["Functional components", "Class components", "Hooks", "Redux", "HOC", "Thunk",
+                "REST API", "Tests", "Libraries..."]
         },
         {
             title: "Redux",
             styleI: reduxImage,
-            skills: ["Redux in TypeScript", "Connect", "redux-form", "Redux+LocaleStorage"]
+            skills: ["Redux in TypeScript", "Connect", "Redux-form", "Redux+LocaleStorage"]
         },
         {
             title: "HTML/CSS",
@@ -47,12 +47,13 @@ const Skills = () => {
         }
     ]
 
-    return (<Fade bottom>
+    return (<Fade left>
             <div id="skills" className={style.skillsBlock}>
                 <div className={style.skillsContainer}>
                     <Title title="My skills"> </Title>
                     <div className={style.skills}>
                         {mySkillsArr.map((sk) => (<MySkill
+                            key={sk.title}
                             style={sk.styleI}
                             title={sk.title}
                             skills={sk.skills}

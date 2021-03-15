@@ -9,8 +9,11 @@ const MySkill = (props) => {
             <h3 className={style.title}>{props.title}</h3>
             <div className={style.description}>
                 {
-                    props.skills.map((deskr) =>
-                        <li className={style.li}> {deskr} </li>)}
+                    props.skills.map((someSkill,index) =>
+                        <li
+                            key={index}
+                            className={style.li}
+                        > {someSkill} </li>)}
             </div>
         </div>
     )
