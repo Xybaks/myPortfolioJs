@@ -12,10 +12,12 @@
   z-index: 2;
   text-decoration:none;
   cursor: pointer;
-  @include text($mainColor,poppins,35px,normal,600,2px);
-  @media screen and (max-width: 750px ){
-   @include text($mainColor,poppins,15px,normal,300,1px);
-
+  @include text($mainColor,poppins,35px,normal,600,1px);
+  @media screen and (min-width: 500px) and (max-width: 850px ){
+   @include text($mainColor,poppins,18px,normal,300,1px);
+  }
+  @media screen and (max-width: 500px){
+   @include text($mainColor,poppins,15px,normal,300,0px);
   }
  }
 }

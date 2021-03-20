@@ -23,7 +23,7 @@ const Main = () => {
                         </h1>
                         <Roll left>
                             <ReactTypingEffect
-                                text={["Front-end Developer", "Looking for a job..."]}
+                                text={["Frontend Developer", "Looking for a job..."]}
                                 eraseDelay={1000}
                             />
                         </Roll>

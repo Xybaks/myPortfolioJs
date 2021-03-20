@@ -14,7 +14,7 @@ const myNavbarArr = [
     {
         title: "lindedin",
         imgLogo: lindedinImg,
-        link: "https://www.linkedin.com/in/nikolai-berestevich-87749a1a3/"
+        link: "https://linkedin.com/in/nikolai-berestevich"
     },
     {
         title: "github",

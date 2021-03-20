@@ -6,7 +6,7 @@ const Navbar = () => {
     const Link = Scroll.Link;
     const myNavbarArr = [
         {
-            title: "Go to top",
+            title: "To top",
             link: "main"
         },
         {

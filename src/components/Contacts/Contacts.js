@@ -10,6 +10,7 @@ const Contacts = () => {
         e.preventDefault();
         emailjs.sendForm('service_9h3pcnu', 'template_6r8xfxl', e.target, 'user_pdLCIcbtWMFPHqEnvLBR9')
             .then(() => {
+                // кусок кода для зануления формы, т.к. не нашёл, как это делается в библиотеке
                 Array.from(e.nativeEvent.target.children).forEach(item => {
                         if (item.dataset.element === "cleanForm") {
                             item.value = "";
